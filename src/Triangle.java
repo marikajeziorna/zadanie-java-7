@@ -2,12 +2,12 @@ public class Triangle {
     private int a;
     private int b;
     private int c;
-
+    boolean count;
 
     public Triangle(int a, int b, int c) {
-       setA(a);
-       setB(b);
-       setC(c);
+        setA(a);
+        setB(b);
+        setC(c);
     }
 
     public int getA() {
@@ -32,10 +32,6 @@ public class Triangle {
 
     public void setC(int c) {
         this.c = c;
-    }
-
-    public boolean isRightTriangle(){
-        return getA()*getA() + getB()*getB() == getC()*getC();
     }
 }
 
